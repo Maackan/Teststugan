@@ -108,8 +108,11 @@ namespace Teststugan
             
         }
 
-        
+        [Fact]
+        public void testaEmptyString()
+        {
+            Assert.Equal(String.empty, "");
+        }
 
-    
     }
 }
