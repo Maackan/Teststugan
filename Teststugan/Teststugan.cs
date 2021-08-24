@@ -111,7 +111,7 @@ namespace Teststugan
         [Fact]
         public void testaEmptyString()
         {
-            Assert.Equal(String.empty, "");
+            Assert.Equal(string.Empty, "Detta kommer inte funka");
         }
 
     }
