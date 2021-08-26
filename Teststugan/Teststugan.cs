@@ -1,5 +1,6 @@
 using System;
 using System.Diagnostics;
+using System.Security.Cryptography.X509Certificates;
 using Xunit;
 using Xunit.Sdk;
 
@@ -113,6 +114,43 @@ namespace Teststugan
         {
             Assert.Equal(string.Empty, "Detta kommer inte funka");
         }
+
+        [Fact]
+
+        public void kmhToCms()
+        {
+
+            double x = 75;
+
+            double toCms = 0.036;
+
+            double result = x / toCms;
+
+
+
+            int floored = Convert.ToInt32(result);
+
+
+            Assert.Equal(2083, floored);
+        }
+
+        [Fact]
+        public void testInvertArray()
+        {
+            int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+
+            
+            
+
+            for(int i = 0; i < numbers.Length; i++)
+            {
+                numbers[i] = numbers[i] * -1;//Inverterar positiv siffra till negativ och vice versa. i går igenom alla element.
+            }
+
+            
+            
+        }
+
 
     }
 }
